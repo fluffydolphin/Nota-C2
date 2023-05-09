@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fluffy Chat</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="module" src="settings.js"></script>
+</head>
+
+<body>
+    <div id="scroll-area" class="chat-area">
+        <br>
+        <h1>
+            Nota-C2
+        </h1>
+        <br>
+        <br>
+        <div class="button-group">
+            <h4>APP SETTINGS</h4>
+            <div class="button-container">
+                <button id="appearncebutton" class="styled-button ">Appearnce</button>
+                <button id="notificationsbutton" class="styled-button ">Notifications</button>
+                <button id="languagebutton" class="styled-button ">Language</button>
+            </div>
+        </div>
+        <hr class="styled-hr" , style="width: 75%;">
+        <div class="button-group ">
+            <h4>LISTENER SETTINGS</h4>
+            <div class="button-container ">
+                <button class="styled-button ">Button 1</button>
+                <button class="styled-button ">Button 2</button>
+                <button class="styled-button ">Button 3</button>
+            </div>
+        </div>
+        <div id="divmessages " class="messages "></div>
+    </div>
+    <div class="container ">
+        <nav class="navbar ">
+            <ul>
+                <li><a href="index.html ">Home</a></li>
+                <li><a href="map.html ">Map</a></li>
+                <li><a href="gen.html ">Generate</a></li>
+                <li><a href="# ">Settings</a></li>
+            </ul>
+        </nav>
+        <div>
+            <div id="appearncesettings" style="text-align: center;">
+                <br>
+                <br>
+                <br>
+                <h2 style="color: white; padding: 10px;">Appearnce</h2>
+                <hr class="styled-hr" style="width: 30%;">
+                <h4 style="color: white;">Font Size</h4>
+                <input type="range" min="12" max="24" value="16" id="font-size-slider">
+                <div style="color: white;" id="font-size-percent"></div>
+                <hr class="styled-hr" style="width: 30%;">
+                <h4 style="color: white;">Accent Color</h4>
+                <br>
+                <input type="color" style="cursor: pointer;" id="colorPicker">
+            </div>
+        </div>
+
+        <div id="notificationssettings" style="text-align: center;">
+            <br>
+            <br>
+            <br>
+            <h2 style="color: white; padding: 10px;">Notifications</h2>
+            <hr class="styled-hr" style="width: 30%;">
+            <h4 style="color: white;">Enable Notifications</h4>
+            <br>
+            <div class="togglecontainer">
+                <label class="toggle">
+                  <input id="notiparent" type="checkbox" class="toggle-input parent-toggle">
+                  <span class="toggle-sliderparent"></span>
+                </label>
+            </div>
+            <hr class="styled-hr" style="width: 25%;">
+            <br>
+            <h3 style="color: white;">Sounds</h3>
+            <hr class="styled-hr" style="width: 10%;">
+            <div>
+                <div class="togglecontainer">
+                    <h4 class="label-text">Session Connected</h4>
+                    <label class="toggle">
+                  <input id="sConnected" type="checkbox" class="toggle-input child-toggle">
+                  <span class="toggle-slider"></span>
+                </label>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div>
+                <div class="togglecontainer">
+                    <h4 class="label-text">Session Disconnected</h4>
+                    <label class="toggle">
+                  <input id="sDisconnected" type="checkbox" class="toggle-input child-toggle">
+                  <span class="toggle-slider"></span>
+                </label>
+                </div>
+            </div>
+            <div id="languagesettings">
+                language
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

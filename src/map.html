@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fluffy Chat</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="module" src="map.js"></script>
+</head>
+
+<body>
+    <div id="scroll-area" class="chat-area">
+        <h1>
+            Nota-C2
+        </h1>
+        <div id="divmessages" class="messages"></div>
+    </div>
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Map</a></li>
+                <li><a href="gen.html">Generate</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </nav>
+        <div class="map-container">
+            <img src="assets/map.png" class="map-image">
+            <button id="northamericabutton" class=" round-button" style="top: 295px; left: 435px;"></button>
+            <div id="northamericamenu" class="menu" style="display: none; top: 140px; left: 440px;">
+                <h4 style="color: white; ">North America</h4>
+                <br>
+                <h5 style="color: white; "> No active North American sessions</h5>
+            </div>
+            <button id="europebutton" class="round-button" style="top: 260px; left: 740px; "></button>
+            <div id="europemenu" class="menu" style="display: none; top: 105px; left: 745px; ">
+                <h4 style="color: white; ">Europe</h4>
+                <br>
+                <h5 style="color: white; "> No active European sessions</h5>
+            </div>
+            <button id="southamericabutton" class=" round-button" style="top: 455px; left: 550px;"></button>
+            <div id="southamericamenu" class="menu" style="display: none; top: 290px; left: 555px;">
+                <h4 style="color: white; ">South America</h4>
+                <br>
+                <h5 style="color: white; "> No active South American sessions</h5>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
