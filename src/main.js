@@ -1,3 +1,6 @@
+const { invoke } = window.__TAURI__.tauri;
+const { listen } = window.__TAURI__.event;
+
 var storedFontSize = localStorage.getItem("fontSize");
 
 if (storedFontSize) {
@@ -14,3 +17,5 @@ if (localStorage.getItem("color")) {
     }
     nav.style.backgroundColor = savedColor;
 }
+let testz = await invoke("jsgetinfo", {});
+console.log(testz);
